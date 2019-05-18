@@ -96,7 +96,8 @@ main {
       font-size: 30px;
   }
   .text span .strong {
-    color: rgba(255, 94, 0, 0.698);
+    /* color: rgba(255, 94, 0, 0.698); */
+    display: none;
   }
   aside {
       width: 100%;

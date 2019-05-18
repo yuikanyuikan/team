@@ -6,8 +6,15 @@ $(function(){
     // <button class="content in-main">ABOUT WEBSITE</button>がクリックされた時、
     $('.in-main').click(function () {
         // htmlのscrollTopの300下までアニメーションで移動する。
-        $('html').animate({scrollTop: 300} ,500);
+        $('html').animate({scrollTop: 300} ,500)
+
+        let html = $('html');
+        if(html > scrollTop - 300) {
+            $('.strong').fadeIn('10000');
+            $('.strong').css('color', 'rgba(255, 94, 0, 0.698)');
+        }
     });
+
     // <button class="content in-footer">TEAM GAP</button>がクリックされた時、
     $('.in-footer').click(function () {
         // htmlのscrollbottomまでアニメーションで移動する。
