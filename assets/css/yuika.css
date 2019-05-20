@@ -1,31 +1,22 @@
-/* body{
+body{
     /* 画像ファイルの指定 */
-  /* background-image: url(../pictures/dream.jpg); */
-  /* 画像を常に天地左右の中央に配置 */
-  /* background-position: center center; */
-  /* 画像をタイル状に繰り返し表示しない */
-  /* background-repeat: no-repeat; */
-  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-  /* background-attachment: fixed; */
-  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-  /* background-size: cover; */
+  background-image: url(../pictures/dream.jpg);
 
-  /* color: white; */
-  
-/* } */
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat; 
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed; 
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+
+  color: white;
+}
 
 .header{
     height: 100vh;
 }
-
-/* .pictures{
-    width: 300px;
-    height: 20vh;
-    justify-content: space-between;
-    /* position: absolute;
-    margin-top: 80vh; */
-    /* display: flex;*/ 
-    
 
 .image img {
     width: 300px;
@@ -36,7 +27,7 @@
 .image{
     margin-top: 28vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -63,32 +54,62 @@
 }
 
 h1{
-    font-size: 3    0px;
+    font-size: 40px;
 }
 
 .classjungle{
-    height: 100vh;
+    height: 800px;
+    justify-content: space-around;
 }
 
+.classjungle span{
+    color: greenyellow;
+}
 .mori{
-    height: 200px;
+    height: 300px;
     width:400px;
+    border-radius: 50%;
 }
 
 .classocean{
-    height: 100vh;
+    height: 800px;
+    justify-content: space-around;
+}
+
+.classocean span{
+    color: blue;
 }
 
 .umi{
-    height: 200px;
+    height: 300px;
     width:400px;
+    border-radius: 50%;
 }
 
 .classisland{
-    height: 100vh;
+    height: 800px;
+    justify-content: space-around;
+}
+
+.classisland span{
+    color: deeppink;
 }
 
 .shima{
-    height: 200px;
-    width: 25%;
+    height: 300px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.gazou:hover {
+    display: inline-block;
+    animation: hurueru .2s  infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
