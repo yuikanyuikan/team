@@ -8,38 +8,39 @@
     height: 100vh;
 }
 .title {
-    height: 100%;
-    position: absolute;
-    top: 30px;
-    right: 0px;
+    height: 1000px;
+    position: fixed;
+    top: 20px;
+    right: 0;
     /* font-family: 'Hannotate SC',sans-serif; */
     font-family: 'HanziPen SC',sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     color: whitesmoke;
     writing-mode: vertical-rl;
     display: flex;
 }
+
 .title p {
     margin-right: 200px;
 }
 button {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    font-size: 100px;
+    font-size: 50px;
     text-align: center;
     font-family: 'HanziPen SC',sans-serif;
 } 
 .startbtn {
     background-color: rgba(237, 122, 185, 0.9);
     border: solid 3px silver;
-    margin-right: 550px;
-    margin-top: -100px;
+    margin-right: 120px;
 }
 .startbtn:hover {
     background-color: rgba(255, 255, 0, 0.866);
     border: solid 3px silver;
 }
+
 
 .okinawa {
     width: 100%;
