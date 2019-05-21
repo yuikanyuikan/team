@@ -19,19 +19,23 @@ let swim = $("#swim");
 let IslandHop = $("#IslandHop");
 
 forest.click(function(){
-    $("html").animate({scrollTop:600},300);
+    $("html").animate({scrollTop:1800},300);
 });
 
 swim.click(function(){
-    $("html").animate({scrollTop:1400},300);
+    $("html").animate({scrollTop:2600},300);
 });
 
 IslandHop.click(function(){
-    $("html").animate({scrollTop:2200},300);
+    $("html").animate({scrollTop:3400},300);
 });
 
 $(".up").click(function(){
-    $("html").animate({scrollTop:0},300);
+    $("html").animate({scrollTop:1200},300);
+});
+
+$(".video").click (function(){
+    $("html").animate({scrollTop:1200},300);
 });
 
 $(window).scroll(function(){
@@ -44,17 +48,6 @@ $(window).scroll(function(){
         $(".up").fadeOut();
      }
     });
-
-
-
-
-
-
-
-
-
-
-
 
 })
 
@@ -107,4 +100,20 @@ $(document).ready(function(){
 		});
 	}
 })(jQuery); 
+
+
+// $(function() {
+//     // $(document).ready( function(){
+//     //     $('.box').css({opacity:0});
+//     // })
+//     $('.startbtn').click(function() {
+//         $('.clothes').fadeOut('10000',function() {
+//             $('.clothes').remove();
+//             $('.title').fadeOut('5000',function() {
+//                 $('.title').remove();
+//                 // $('.btn').fadeIn('10000');
+//             })
+//         })
+//     })
+// })
 
