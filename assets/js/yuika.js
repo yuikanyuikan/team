@@ -29,7 +29,35 @@ swim.click(function(){
 IslandHop.click(function(){
     $("html").animate({scrollTop:2200},300);
 });
+
+$(".up").click(function(){
+    $("html").animate({scrollTop:0},300);
+});
+
+// $(window).scroll(function(){
+//     let scrollTop = $(document).scrollTop();
+//     let classjungle = $(".classjungle").offset().top;
+
+//      if ( scrollTop > classjungle){
+//         $(".up").fadeIn();
+//      }else{
+//         $(".up").fadeOut();
+//      }
+//     });
+
+
+
+
+
+
+
+
+
+
+
 })
+
+
 
 $(document).ready(function(){
 	$('body').pointer();
