@@ -34,16 +34,17 @@ $(".up").click(function(){
     $("html").animate({scrollTop:0},300);
 });
 
-// $(window).scroll(function(){
-//     let scrollTop = $(document).scrollTop();
-//     let classjungle = $(".classjungle").offset().top;
+$(window).scroll(function(){
+    let scrollTop = $(document).scrollTop();
+    let classjungle = $(".classjungle").offset().top;
 
-//      if ( scrollTop > classjungle){
-//         $(".up").fadeIn();
-//      }else{
-//         $(".up").fadeOut();
-//      }
-//     });
+     if ( scrollTop > classjungle){
+        $(".up").fadeIn();
+     }else{
+        $(".up").fadeOut();
+     }
+    });
+
 
 
 
