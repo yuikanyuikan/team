@@ -1,0 +1,140 @@
+body{
+    background-image: url(https://www.pakutaso.com/shared/img/thumb/miyazakiDSC_3091_TP_V.jpg);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+   margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: 'Hannotate TC',sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.photo{
+    width: 300px;
+    height: 300px; 
+}
+
+.photo-image{
+    width: 100%;
+    height: 100%; 
+    border-radius: 50%;
+}
+
+.photo-title{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Hannotate TC',sans-serif;
+}
+
+.detail{
+    display: flex;
+    margin-top: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail2{
+    display: flex;
+    margin-top: 450px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail3{
+    display: flex;
+    margin-top: 450px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    width: 700px;
+    height: 400px;
+}
+
+.card h2{
+    font-size: 30px; 
+    color: whitesmoke;
+    font-family: 'Hannotate TC',sans-serif;
+    margin-bottom: 30px;
+}
+
+.card-image{
+    width: 100%;
+    height: 100%;
+}
+
+.card-text{
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+.ggmap{
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+
+.btn-group{
+    display: flex;
+    margin-top: 400px;
+    align-items: center;
+    justify-content: center;
+}    
+
+.activity{
+    display: inline-block;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-image: linear-gradient(-90deg, rgb(0, 255, 179), #FFD500);
+  transition: .5s;
+  background-size: 200%;
+  margin-right: 75px;
+}
+
+.activity:hover{
+    background-position: right center;
+    color: black;
+}
+
+.home{
+    display: inline-block;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-image: linear-gradient(-90deg, #FF006E, rgb(0, 81, 255));
+  transition: .5s;
+  background-size: 200%;
+  margin-left: 75px;
+}
+
+.home:hover{
+    background-position: right center;
+    color: black;
+}
