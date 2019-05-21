@@ -2,15 +2,14 @@
 @media screen and (max-width:480px){
 .classjungle{
     display: grid;
-    grid-template-rows: repeat(6,50%);
+    grid-template-rows: repeat(6,80%);
     grid-template-columns: repeat(1,50%);
-    grid-gap: 5%;
     justify-content: center;
 }
 
 .classocean{
     display: grid;
-    grid-template-rows: repeat(6,50%);
+    grid-template-rows: repeat(6,80%);
     grid-template-columns: repeat(1,50%);
     grid-gap: 5%;
     justify-content: center;
@@ -18,20 +17,12 @@
 
 .classisland{
     display: grid;
-    grid-template-rows: repeat(6,50%);
+    grid-template-rows: repeat(6,80%);
     grid-template-columns: repeat(1,50%);
     grid-gap: 5%;
     justify-content: center;
 }
 }
-
-
-
-
-
-
-
-
 
 body{
     /* 画像ファイルの指定
