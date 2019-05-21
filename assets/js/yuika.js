@@ -1,3 +1,7 @@
+// 最初icon消す
+$(".left").css("display","none");
+$(".up").css("display","none");
+
 // swiper
 var swiper = new Swiper('.swiper-container', {
     effect: "cube",
@@ -35,14 +39,14 @@ $(".up").click(function(){
 });
 
 $(".video").click (function(){
-    $("html").animate({scrollTop:1200},300);
+    $("html").animate({scrollTop:1200},2000);
 });
 
 $(window).scroll(function(){
     let scrollTop = $(document).scrollTop();
     let classjungle = $(".classjungle").offset().top;
 
-     if ( scrollTop > classjungle){
+     if (scrollTop > classjungle -100){
         $(".up").fadeIn();
      }else{
         $(".up").fadeOut();
@@ -50,6 +54,19 @@ $(window).scroll(function(){
     });
 
 })
+
+$(window).scroll(function(){
+    let scrollTop = $(document).scrollTop();
+    let classjungle = $(".classjungle").offset().top;
+
+     if (scrollTop > classjungle -100){
+        $(".left").fadeIn();
+     }else{
+        $(".left").fadeOut();
+    }
+
+});
+
 
 
 
