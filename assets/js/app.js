@@ -4,7 +4,7 @@ $(function(){
 
         let mainTop = $('.photo').offset().top;
 
-        if (scrollTop > mainTop - 200) {
+        if (scrollTop > mainTop ) {
             $('.photo').fadeIn();
         };
     })
