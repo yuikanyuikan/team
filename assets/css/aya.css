@@ -1,0 +1,187 @@
+#header {
+    width: 100%;
+    height: 550px;
+    font-family: 'Chalkduster',sans-serif;
+}
+#title {
+    font-size: 100px;
+    position: relative;
+}
+.a {
+    writing-mode: vertical-rl;  
+}
+
+img {
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 100px;
+    width: 93%;
+    height: 60vh;
+}
+main {
+    margin-top: 10px;
+
+}
+.content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 40px;
+    position: relative;
+    font-weight: bold;
+    padding: 5px 11px 5px 15px;
+    text-decoration: none;
+    transition: .4s;
+    font-size: 20px;
+    font-family: 'HanziPen SC',sans-serif;
+    background-color: whitesmoke;
+}
+.top {
+    margin-top: 20px;
+}
+  
+  .content:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    background:rgb(255, 208, 0);
+  }
+  
+  .content:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 4px;
+    height: 100%;
+    top:0;
+    left: 100%;
+    border-radius: 3px;
+    background:rgb(255, 208, 0);
+  }
+  
+  .content:hover:before,
+  .content:hover:after {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  .box {
+      display: flex;
+      line-height: 30px;
+
+  }
+  .text {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin-left: 20px;
+      font-family: 'Hannotate TC',sans-serif;
+  }
+  .ptitle {
+      font-size: 30px;
+      padding: 5px;
+  }
+  .title {
+      padding-top: 50px;
+  }
+  .text span {
+      border-bottom: solid 2px black;
+      font-family: 'Chalkduster',sans-serif;
+      color: black;
+      font-size: 30px;
+  }
+  .text span .strong {
+    /* color: rgba(255, 94, 0, 0.698); */
+    display: none;
+  }
+  aside {
+      width: 100%;
+      height: 430px; 
+      margin-top: 10px; 
+      font-family: 'Hannotate TC',sans-serif;
+      font-size: 40px;
+      text-align: center;
+  }
+.title-main {
+    margin-top: 80px;
+    border-left: solid 300px rgb(255, 208, 0);
+    border-right:solid 300px rgb(255, 208, 0);
+}
+.img {
+    width: 700px;
+    height: 350px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 0;
+    border-radius: 20px;
+}
+.name {
+    position: absolute;
+    color: whitesmoke;
+    font-family: 'Chalkduster',sans-serif;
+    margin-top: -100px;
+    font-size: 50px;
+}
+.text1 {
+    margin-left: 100px;
+}
+.text2 {
+    margin-left: 800px;
+}
+#list {
+    font-size: 20px;
+    margin-right: 820px;
+    background: linear-gradient(transparent 50%, rgb(255, 208, 0) 50%);
+}
+#list:hover {
+    margin-right: 800px;
+    padding: 10px;
+}
+.lilist {
+    padding: 5px;
+}
+.lilist:last-child {
+    padding-bottom: 20px;
+}
+/* footer {
+    width: 100%;
+    height: 380px;
+    font-family: 'Hannotate TC',sans-serif;
+}
+.member,
+#name,
+#name li {
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.member span,
+.gap span {
+    background: linear-gradient(transparent 50%, pink 50%);
+    font-family: 'Marker Felt',sans-serif;
+}
+#name li {
+    border-bottom: 3px solid;
+    margin-left: 600px;
+    margin-right: 600px;
+    font-size: 25px;
+}
+.gap {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+} */
+.okinawa {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    /* margin-left: 300px;
+    margin-top: -130px; */
+    margin-left: 1300px;
+    border: solid 2px;
+}
