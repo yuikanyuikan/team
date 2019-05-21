@@ -1,3 +1,7 @@
+// 最初icon消す
+$(".left").css("display","none");
+$(".up").css("display","none");
+
 // swiper
 var swiper = new Swiper('.swiper-container', {
     effect: "cube",
@@ -19,44 +23,50 @@ let swim = $("#swim");
 let IslandHop = $("#IslandHop");
 
 forest.click(function(){
-    $("html").animate({scrollTop:600},300);
+    $("html").animate({scrollTop:1800},300);
 });
 
 swim.click(function(){
-    $("html").animate({scrollTop:1400},300);
+    $("html").animate({scrollTop:2600},300);
 });
 
 IslandHop.click(function(){
-    $("html").animate({scrollTop:2200},300);
+    $("html").animate({scrollTop:3400},300);
 });
 
 $(".up").click(function(){
-    $("html").animate({scrollTop:0},300);
+    $("html").animate({scrollTop:1200},300);
+});
+
+$(".video").click (function(){
+    $("html").animate({scrollTop:1200},2000);
 });
 
 $(window).scroll(function(){
     let scrollTop = $(document).scrollTop();
     let classjungle = $(".classjungle").offset().top;
 
-     if ( scrollTop > classjungle){
+     if (scrollTop > classjungle -100){
         $(".up").fadeIn();
      }else{
         $(".up").fadeOut();
      }
     });
 
-
-
-
-
-
-
-
-
-
-
-
 })
+
+$(window).scroll(function(){
+    let scrollTop = $(document).scrollTop();
+    let classjungle = $(".classjungle").offset().top;
+
+     if (scrollTop > classjungle -100){
+        $(".left").fadeIn();
+     }else{
+        $(".left").fadeOut();
+    }
+
+});
+
 
 
 
@@ -107,4 +117,20 @@ $(document).ready(function(){
 		});
 	}
 })(jQuery); 
+
+
+// $(function() {
+//     // $(document).ready( function(){
+//     //     $('.box').css({opacity:0});
+//     // })
+//     $('.startbtn').click(function() {
+//         $('.clothes').fadeOut('10000',function() {
+//             $('.clothes').remove();
+//             $('.title').fadeOut('5000',function() {
+//                 $('.title').remove();
+//                 // $('.btn').fadeIn('10000');
+//             })
+//         })
+//     })
+// })
 
