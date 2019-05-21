@@ -1,6 +1,7 @@
 // 最初icon消す
 $(".left").css("display","none");
 $(".up").css("display","none");
+$(".motoki").css("display","none");
 
 // swiper
 var swiper = new Swiper('.swiper-container', {
@@ -21,25 +22,29 @@ $(function(){
 let forest = $("#forest");
 let swim = $("#swim");
 let IslandHop = $("#IslandHop");
+let header = $(".header").offset().top;
+let sectionforest = $(".classjungle").offset().top;
+let sectionswim = $(".classocean").offset().top;
+let sectionIslandhop = $(".classisland").offset().top;
 
 forest.click(function(){
-    $("html").animate({scrollTop:1800},300);
+    $("html").animate({scrollTop:sectionforest},300);
 });
 
 swim.click(function(){
-    $("html").animate({scrollTop:2600},300);
+    $("html").animate({scrollTop:sectionswim},300);
 });
 
 IslandHop.click(function(){
-    $("html").animate({scrollTop:3400},300);
+    $("html").animate({scrollTop:sectionIslandhop},300);
 });
 
 $(".up").click(function(){
-    $("html").animate({scrollTop:1200},300);
+    $("html").animate({scrollTop:header},300);
 });
 
 $(".video").click (function(){
-    $("html").animate({scrollTop:1200},2000);
+    $("html").animate({scrollTop:header},2000);
 });
 
 $(window).scroll(function(){
@@ -63,6 +68,18 @@ $(window).scroll(function(){
         $(".left").fadeIn();
      }else{
         $(".left").fadeOut();
+    }
+
+});
+
+$(window).scroll(function(){
+    let scrollTop = $(document).scrollTop();
+    let classjungle = $(".classjungle").offset().top;
+
+     if (scrollTop > classjungle -100){
+        $(".motoki").fadeIn();
+     }else{
+        $(".motoki").fadeOut();
     }
 
 });
@@ -134,3 +151,26 @@ $(document).ready(function(){
 //     })
 // })
 
+// $(function(){
+//     $('#sound').bind('touchstart', function() {
+//         var audio = new Audio('sound.mp3');
+//         audio.load();
+    
+//         audio.addEventListener('canplaythrough', function() {
+//             audio.play();
+// });
+
+
+
+// $(function(){
+//     let sound = $(".audio")
+
+//     $(".sound").onclick(function(){
+//         sound.play;
+//         }else{
+//             sound.pause;
+//         });
+
+
+
+document.getElementById("audio").play();
