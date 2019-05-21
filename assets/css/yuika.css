@@ -1,0 +1,171 @@
+/* responsive 対応 */
+@media screen and (max-width:480px){
+.classjungle{
+    display: grid;
+    grid-template-rows: repeat(6,80%);
+    grid-template-columns: repeat(1,50%);
+    justify-content: center;
+}
+
+.classocean{
+    display: grid;
+    grid-template-rows: repeat(6,80%);
+    grid-template-columns: repeat(1,50%);
+    grid-gap: 5%;
+    justify-content: center;
+}
+
+.classisland{
+    display: grid;
+    grid-template-rows: repeat(6,80%);
+    grid-template-columns: repeat(1,50%);
+    grid-gap: 5%;
+    justify-content: center;
+}
+}
+
+body{
+    /* 画像ファイルの指定
+  background-image: url(../pictures/dream.jpg);
+  /* 画像を常に天地左右の中央に配置 */
+  /* background-position: center center; */
+  /* 画像をタイル状に繰り返し表示しない */
+  /* background-repeat: no-repeat;  */
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  /* background-attachment: fixed;  */
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    /* background-size: cover; */ 
+};
+
+.header{
+    height: 100vh;
+}
+
+.image img {
+    width: 300px;
+    height: 22vh;
+    display: block;
+}
+
+.image{
+    margin-top: 28vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#forest:hover{
+    opacity: 0.7;
+}
+
+#swim:hover{
+    opacity: 0.7;
+}
+
+#IslandHop:hover{
+    opacity: 0.7;
+}
+.slide-img{
+    width:100%;
+    height:78vh;
+}
+
+.swiper-wrapper{
+    text-align: center;
+    width:100%;
+    height: 50vh;
+}
+
+h1{
+    font-size: 40px;
+    display: flex;
+    align-content: center;
+   flex-direction: column;
+    text-align: center;
+}
+
+.classjungle{
+    height: 800px;
+    justify-content: space-around;
+}
+
+.classjungle span{
+    color: greenyellow;
+}
+
+.JungleP{
+    display: flex;
+   align-content: center;
+   flex-direction: column;
+   text-align: center;
+
+}
+
+.mori{
+    height: 300px;
+    width:400px;
+    border-radius: 50%;
+}
+
+.classocean{
+    height: 800px;
+    justify-content: space-around;
+}
+
+.classocean span{
+    color: blue;
+}
+
+.OceanP{
+        display: flex;
+       align-content: center;
+       flex-direction: column;
+       text-align: center;
+}
+
+.umi{
+    height: 300px;
+    width:400px;
+    border-radius: 50%;
+}
+
+.classisland{
+    height: 800px;
+    justify-content: space-around;
+}
+
+.classisland span{
+    color: deeppink;
+}
+
+.IslandP{
+    display: flex;
+   align-content: center;
+   flex-direction: column;
+   text-align: center;
+
+}
+
+.shima{
+    height: 300px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.gazou:hover {
+    display: inline-block;
+    animation: hurueru .2s  infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+footer .icon{
+    display: flex;
+    justify-content: space-between;
+}   
