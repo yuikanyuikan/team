@@ -118,15 +118,15 @@ h1{
 }
 
 .classocean span{
-    color: blue;
+    color:aqua;
 }
 
 .OceanP{
-        display: flex;
-       align-content: center;
-       flex-direction: column;
-       text-align: center;
-       color: white;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
 }
 
 .umi{
@@ -175,12 +175,18 @@ h1{
 footer .icon{
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: yellow;
     position: fixed;
     bottom: 0;
     width: 100%;
 }   
 
 footer a{
-    color: white;
+    color: yellow;
 }
+
+/* footer .sound{
+    position: fixed;
+    right: 0;
+    top:0;
+} */
