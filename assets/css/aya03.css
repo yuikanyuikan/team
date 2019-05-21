@@ -8,13 +8,13 @@
     height: 100vh;
 }
 .title {
-    height: 1000px;
-    position: fixed;
-    top: 20px;
-    right: 0;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    right: 0px;
     /* font-family: 'Hannotate SC',sans-serif; */
     font-family: 'HanziPen SC',sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     color: whitesmoke;
     writing-mode: vertical-rl;
     display: flex;
@@ -23,17 +23,18 @@
     margin-right: 200px;
 }
 button {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 100px;
     text-align: center;
     font-family: 'HanziPen SC',sans-serif;
 } 
 .startbtn {
     background-color: rgba(237, 122, 185, 0.9);
     border: solid 3px silver;
-    margin-right: 120px;
+    margin-right: 550px;
+    margin-top: -100px;
 }
 .startbtn:hover {
     background-color: rgba(255, 255, 0, 0.866);
@@ -84,3 +85,15 @@ button {
     background-color: whitesmoke;
     color: pink;
 }
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .title p {
+      position: absolute;
+      right: -20px;
+    }
+    .startbtn {
+        position: absolute;
+        margin-top: 100px;
+        margin-right: 100px;
+    }
+  }
