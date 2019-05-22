@@ -23,9 +23,9 @@ let forest = $("#forest");
 let swim = $("#swim");
 let IslandHop = $("#IslandHop");
 let header = $(".header").offset().top;
-let sectionforest = $(".classjungle").offset().top;
-let sectionswim = $(".classocean").offset().top;
-let sectionIslandhop = $(".classisland").offset().top;
+let sectionforest = $(".jungle").offset().top;
+let sectionswim = $(".ocean").offset().top;
+let sectionIslandhop = $(".island").offset().top;
 
 forest.click(function(){
     $("html").animate({scrollTop:sectionforest},300);
