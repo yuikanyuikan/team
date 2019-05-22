@@ -14,7 +14,7 @@ $(function(){
         };
 
         if (scrollTop > mainTop -550) {
-            $('.center-img').fadeIn(2000);
+            $('.center-img').fadeIn(1500);
         };
         })
 })
