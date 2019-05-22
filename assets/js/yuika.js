@@ -89,6 +89,8 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 	$('body').pointer();
+
+    document.getElementById("audio").play();
 });
 
 
@@ -172,5 +174,3 @@ $(document).ready(function(){
 //         });
 
 
-
-document.getElementById("audio").play();
